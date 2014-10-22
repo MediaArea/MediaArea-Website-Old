@@ -29,6 +29,50 @@ parse_str(strtok("?"), $Argument);
 <pre>
 MediaInfo change log:
 
+Version 0.7.70, 2014-09-03
+--------------
++ DTS Neural Audio: display of DTS Neural Audio descriptor information (matrix encoded channels count and position), sponsored by Numericable
++ FFV1: version, bit depth, color space, chroma subsampling, versions 0 to 3, sponsored by NOA Audio Solutions
++ HuffYUV: version, bit depth, color space, chroma subsampling, versions 1 to 3, sponsored by NOA Audio Solutions
++ PDF: basic detection (goal is to detect PDF/A profile)
++ HLS: support of encrypted streams (key must be in FileName.FileExt.key or provided via the library API)
++ CDP: using CDP service descriptor for the list of 708 services + language information
++ MXF: showing the real bit depth ("Quantization bits"); the count of bits stored in the file is in a new field "Stored bit depth" if it differs
++ MXF: Audio "frame rate" (how PCM content is split in packets) information
++ MXF: Audio block alignment byte size (hidden by default)
++ VC-3: adding the commercial name "DNxHD" + bitrate class
++ MXF: SMPTE ST 377-4 (MXF Multichannel Audio Labeling Framework)
++ MXF: "ChannelLayoutID" new field (hidden by default) containing the MXF Channel Assignment Label
++ Wave64: Duration
++ CDP: frame rate
++ IMF: improvements (still work in progress)
++ QuickTime: ia13 CodecID
++ CDP: using ccsvcinfo_section() for service presence and language information
++ MXF/CDP: law rating (from CEA-608 XDS) information added (other containers were already supported)
++ CEA-608: Program name information
++ BMP: support of OS/2 headers
++ HLS: com.apple.streaming.transportStreamTimestamp support
++ ISM: ISMT / text (TTML) streams support
++ MXF: detection of buggy BlockAlign from some muxers, so PCM bit depth is correctly detected despite the buggy metadata
++ HEVC: library name of some encoding libraries
++ MPEG-2 Video: picture structure for interlaced content (interlaced content can have a frame structure)
++ HLS: support of some encrypted files (AES-128 with default IV and per segment), key is provided by the command line --File_Encryption_Key=(Base64 data)
++ HEVC: adding support of x265 library name and x265 encoding settings
++ ProRes: more details about ProRes in AVI or Matroska
++ DV: support of AVd1 CodecID
++ CMake: scripts improvements, thanks to Ivan Romanov
++ Matroska: file name of attachments, thanks to Marshall
+x HEVC: some streams with VUI were not parsed
+x MPEG Video: was not correctly handling 1000:1001 frame rates and NDF time codes combination during frame count computing
+x MPEG Video: was not correctly detecting the time stamp of the first frame in case of closed GOP with first frame not the I-frame
+x XDCAM: information about the MXF header presence was not provided if MOV header has a glbl atom
+x Some specific C++11 code is removed for full compatibility with older C++
+x MXF: Time codes values were buggy in case of MXF with pre-charge ("Origin" not 0)
+x MPEG-4 Visual: wrong analysis in case on video_object_layer_shape not set to regular
+x MPEG-4/MOV: trying to display the summary differently when there is a difference between container and raw stream channels count information (long term method to be discussed)
+x Non-Unicode version was not building anymore
+x DyLib: trying to have a better support of pure C compilers
+
 Version 0.7.69, 2014-04-24
 --------------
 + Italian translation updated, thanks to Roberto
@@ -132,151 +176,6 @@ x #B810, AVC: Infinite loop, thanks to Gildas Desnos
 x #B813, CLI_Compile.sh bug ("eats all resources" while compiling)
 x LATM: false-positive detection of some files
 x MXF: Crash with some files
-
-Version 0.7.65, 2013-11-20
---------------
-+ MXF: forcing detection of MPEG Video in case EssenceCompression is not present but MPEG2VideoDescriptor is present
-+ GXF: detection of some captions and time codes event if they are not present at the beginning of the file (testing middle of the file)
-+ DASH MPD: basic support
-+ HDS F4M (Flash Media Manifest): basic support
-+ DCP AssetMap (AM), PackageList (PKL) and CompositionPlaylist (CPL): basic support
-+ IMF AssetMap (AM), PackageList (PKL) and CompositionPlaylist (CPL): basic support
-+ Mac dylib: looking for the dylib in @executable_path and CFBundleCopyExecutableURL dir
-+ AAC: option for instantaneous bitrate in fast detect mode (MediaInfoLib only)
-+ FTP (custom builds only): support of UTF-8 file names
-+ Colour description: colour_description_present added, better separation between bitstream values and container values
-+ MPEG-4: RLE, color space and bit depth
-+ Law rating: support of CEA-608 XDS Content Advisory in MPEG-PS, MPEG-Ts, LXF, GXF
-+ MPEG-4/MOV: Bug found in one file, sample size is 16 with a 32-bit CodecID ("fl32"), correcting the output of MediaInfo
-x #B775, AVI: AVI can use negative height for raw to signal that it's coded top-down, not bottom-up
-x #B780, MPEG-TS: crash with some files having PAT/PMT change between begin and end of the file
-x #B782, PBCore 1.2: some fields were not in the right order
-x #B784, some humain readable strings were not removed when the corresponding field is removed
-x #B787, MPEG-4/QuickTime: Erratic appereance of Bitrate Mode
-x #B798: setlocale() remove from DLL
-x #B785, DVCPRO HD: streams can be 8 or 10 bit, removing hard coded value from DV parser (MXF header value is used instead when applicable)
-x MPEG-4: wrong demux of some E-AC-3 streams
-x AAC: detection of HE-AACv2 was missing if the library is configured with fast detection
-x MPEG Video: wrong computing of duration of raw stream in case of drop frame time code
-x Automation, StreamKind type was set to integer, it is text
-x MPEG-4: was reading lot of useless bytes from disk when the raw stream format is not known
-x AVI: crash with some malformed text streams
-x Reference/playlist files were not supported from FTP (custom builds only)
-x MPEG-4/MOV: ScanOrder was using "stored" value instead of "displayed" value
-x MXF: Detection of Dolby E was not working in some cases (regression in 0.7.62)
-x MPEG-4/MOV: freeze with some files having mono 32-bit PCM
-
-Version 0.7.64, 2013-07-05
---------------
-+ New canonical URL of the website: http://MediaArea.net/MediaInfo
-+ Portuguese, Basque and Russian translations updated
-+ E-AC-3: support of streams having substreams (e.g. more than 6 channels)
-+ JPEG: detection of YUVA, RGB, RGBA and YCCK color spaces
-+ MPEG Audio: detection of Id3v1 inside an MPEG Audio frame
-+ Matroska: support of HEVC/H.265 (based on specifications draft from DivX inc)
-+ Canopus: detection of scan mode, scan order, pixel aspect ratio
-+ MD5 generation option (work in progress)
-+ Id3v2: reading of all Id3v2 blocks (no more only the first one) at the beginning of the file
-+ MPEG-4: support of few additional iTunes tags, thanks to Kurtnoise
-+ AVI: detection of Ut Video, thanks to Kurtnoise
-+ MXF: detection of Dolby E even if EssenceCompression is not SMPTE 337
-+ AIFF: detection of Dolby E
-+ AIFF: detection of not aligned Dolby E
-+ ARIB B24/B37: Caption_conversion_type display (HD, SD, Mobile)
-+ MPEG-TS: displaying CEA-708 service and CEA-608 presence if the corresponding ATSC descriptor is present
-+ MPEG-TS: quicker analysis in the case of quick parsing option
-+ #F412, Matroska: Handling of files having no DocType
-x #B761, MPEG-TS/ARIB: crash with some streams, thanks to maki
-x #B765, Matroska: was parsing the complete file if a stream indicated in the header is not present
-x #B763, MXF: detection of incoherency of channel count between bitstream and wrapper
-x #B762, Matroska: detecting 23.976 frame rate (instead of 23.962 fps due to imprecise timestamp)
-x #B759, QuickTime: detection of time codes having tcmi not embedded in tmcd box
-x #B766, RMVB: a/v delay is incorrect, currently disabling it
-x #B768, MPEG-4, crash with some MPEG-4 files
-x #B769, MPEG-4, crash with some MPEG-4 files
-x #B764, AVC: wrong parsing of some streams having pic_scaling_matrix
-x AVC, crash with some AVC streams
-x AAC, infinite loop with some AAC streams
-x FLV, infinite loop with some FLV files
-x Matroska: crash with some malformed files
-x MOV: crash/long parsing with some malformed files
-x AC-3: crashes and freezes fix
-x Java 64-bit: Count_Get(StreamKind) was always returning 0
-x Python 64-bit: Count_Get(StreamKind) was always returning 0
-x DTS: some streams were not detected
-x DTS: some memory leaks with 14-bit streams
-x SMPTE ST 302: memory leaks
-x SMPTE ST 337: memory leaks
-x Total failure if MEDIAINFO_REFERENCES_NO #define was used
-x QuickTime: Time code name is in "Title" field
-x MPEG-4/QuickTime: handling of weird "negative" frame duration is stts
-
-Version 0.7.63, 2013-05-13
---------------
-+ Switched to a BSD-2-Clause license
-+ LXF: AFD (from ancillary stream) support
-+ Detection of some side car files and showing them as a single package (optional)
-+ MOV: more channel positions information
-+ TTML: detection
-+ SAMI: detection
-+ ID3: updated list of genres, thanks to Mats
-+ .so: search a local copy of the library before trying default path
-+ AVI: Support of Adobe PARf (Aspect Ratio) chunk
-+ VC-3: Scan order
-+ #P65, Flac/Ogg DISCTOTAL metadata support, thanks to Kurtnoise
-+ #P67, MOV, add Hap Video to the database, thanks to Kurtnoise
-+ #P67, Matroska, add VP9 to the database, thanks to Kurtnoise
-+ #P68, FLV, add HEVC detection in the FLV parser
-+ #P66, MOV, tref/chap handling, with chapters information, thanks to Kurtnoise
-+ #P72, MOV, HEVC/H265 detection and basic support, thanks to Kurtnoise
-+ #F382/P75, PMP format detection
-+ MPEG-TS, HEVC/H265 support
-+ 16:10 DAR known value
-x #B742, MPEG-4/MOV, crash with some truncated/invalid files
-x #B746, MPEG-4/MOV: crash with files having moof atom and no moov atom
-x #B747, Inconsistent hang with buffer API
-x #B757, MediaInfoDLL.py MediaInfoList was not working, thanks to Elbenfreund
-x #B740, XML: dt:dt is replaced by dt (for binary data)
-x MXF: Dolby E streams starting only at the second or third frame were not well detected
-x MPEG-4/MOV: reducing analysis time for I-frame only video streams
-x CEA-708: weird behavior phantom streams are displayed) in case of buggy CEA-708
-x AVI: crash with audio delay and AvgBytesPerSec of 0
-x Wrong demuxing of the caption stream in the case of AVC streams without frame_mbs_only_flag but having 2 fields in one slice.
-x DPX: parsing was very slow with a sequence of files.
-x MXF: Pre-charge duration was not read, time code of the first frame was wrong if "Origin" is not 0
-x FLV: file was sometimes (e.g. most of the file padded with zeroes) fully parsed
-x VC-3: Using values from specifications (based on compression ID) instead of SBD/SST/SPL/APLF from bitstream
-x #738, mediainfo-qt doesn't build
-
-Version 0.7.62, 2013-02-22
---------------
-+ ARIB STD B24/B37 caption detection (both Japanese and Brazilian versions)
-+ LXF: support of AVC, VC-3, MPEG audio, AC-3, Dolby E, and AAC detection and analysis
-+ AC-3: support of 22.05 kHz streams (out of specs but they exist)
-+ MOV: AIC (Apple Intermediate Codec) scan type detection
-+ MOV: support of AVID metadata (interlacement information)
-+ Time code dedicated tracks (MOV, MXF, GXF)
-+ Time code track (MPEG-4/MOV, GXF, MXF)
-+ Time code in SDTI (MXF)
-+ Time code in System scheme 1 (MXF)
-+ Time code in SMPTE RP 188 (aka SMPTE ST 12-2 aka ATC aka VANC) (GXF, LXF, MXF)
-+ Time code in SMPTE RP 196 (aka HANC)
-+ MPEG Video Time code
-+ MPEG-TS: format_identifier, pointer_field, section_length (hidden by default)
-+ CEA-608/708: caption detection duration is increased to 15 seconds (or 64 MB) in order to miss less caption content
-+ Image files as a video stream: file name of the last file
-x #727, MOV: crash with some malformed files (Time scale set to 0)
-x #728, AAC: crash with some malformed streams
-x #681, AVI: was not analyzing VBR streams without bit rate info in header
-x #736: Division by 0 with 0-byte files
-x Id3v2: crash with some malformed tags
-x Bit rate display was "0 bps" if the real bit rate is more than 4 Gbps
-x Division by 0 in case of 0 byte long file
-x MPEG-4: wrong muxing mode information in case of A/53 captions in MPEG Video in MOV
-x P2 Clip: wrong uppercase/lowercase in the file name of source files.
-x MOV: PCM endianness was sometimes wrong
-x MPEG-4: JPEG interlacement was sometimes wrong
-x MPEG Video: wrong DAR information in case of DAR change between begin and end of the file
 </pre>
             </td>
         </tr>
