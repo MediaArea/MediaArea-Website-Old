@@ -59,8 +59,8 @@ ul {
     text-decoration: underline;
 }
 
-.Digimetrics-about {
-    background: url("/_/img/Company/Digimetrics.png") no-repeat;
+.Tektronix-about {
+    background: url("/_/img/Company/Tektronix.png") no-repeat;
     vertical-align: middle;
     width: 340px;
     height: 90px;
@@ -376,8 +376,8 @@ table.menu {
         width: 224px;
         height: 151px;
     }
-    .Digimetrics-about {
-        background: url("/_/img/Company/Digimetrics-small.png") no-repeat;
+    .Tektronix-about {
+        background: url("/_/img/Company/Tektronix-small.png") no-repeat;
         width: 166px;
         height: 32px;
     }
