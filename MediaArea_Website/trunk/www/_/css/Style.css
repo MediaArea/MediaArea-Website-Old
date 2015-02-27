@@ -62,8 +62,8 @@ ul {
 .Tektronix-about {
     background: url("/_/img/Company/Tektronix.png") no-repeat;
     vertical-align: middle;
-    width: 340px;
-    height: 90px;
+    width: 288px;
+    height: 79px;
 }
 
 .thumb-about {
@@ -378,7 +378,7 @@ table.menu {
     }
     .Tektronix-about {
         background: url("/_/img/Company/Tektronix-small.png") no-repeat;
-        width: 166px;
-        height: 32px;
+        width: 144px;
+        height: 40px;
     }
 }
