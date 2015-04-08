@@ -26,10 +26,46 @@ parse_str(strtok("?"), $Argument);
     <tbody>
         <tr>
             <td>
-Important known bug: <a href="https://sourceforge.net/p/mediainfo/bugs/886/">XML output is broken</a><br/><br/>
-
 <pre>
 MediaInfo change log:
+
+Version 0.7.73, 2015-04-09
+--------------
++ BPG: basic support, thanks to Kurtnoise
++ CAF: basic support of Apple Core Audio Format, sponsored by FlavorSys
++ JPEG-2000: Display of profile (Rsiz)
++ JPEG-2000: detection of XYZ colorspace (based on D-Cinema profile)
++ FFV1 in MOV: more details (version...)
++ MOV/MPEG-4: handling of clcn (little endian nclc) Color parameter type
++ #P84, Matroska: Add TEXTST support to the MKV Parser, thanks to Kurtnoise
++ #P85, MPEG-TS: Add TEXTST support to the MPEG-PSI Parser, thanks to Kurtnoise
++ MediaInfoDLL interface: clean up, more debug features added
++ MediaInfoDLL interface: Giant threads lock removed
++ #F460, VC-3/DNxHD: detection of RGB 444 and other SMPTE ST 2019 (2014) new CIDs
++ VC-3/DNxHD: version number (HVN)
++ Clean aperture size is move from width/height to its own field
++ HEVC: tier
++ MXF: writing library and writing application fields are cleaned up
++ ProRes: support of 4444 profiles
++ CAP: detection of CAP files from Cheetah and Lambda
+x B886, XML and HTML outputs were broken
+x B902: EBU AspectRatio invalid in case of non classic numerator:denominator format
+x #B758, VC-3/DNxHD: wrong color space and subsampling in case of unknown CID, now empty if format version is not known
+x #B903, MXG: Incorrect timecode track used for AS-11 DPP MXF files
+x #B904, MXF: Handling repetition of Header Metadata in MXF files
+x MXF: AFD value was wrong (displaying the complete byte, but AFD is only 4 bits of this byte)
+x DTS: some streams in Little endian were not detected
+x MPEG-4: some files were having an incorrect frame count
+x AVC: Some SCTE 128 caption streams were displayed twice
+x BMP; accepting files with file size information set to -1
+x RF64: samplesCount was not always right
+x MOV: avoid wrong parsing in case of "colr" atom with "prof" color parameter type
+x DCP/IMF: ID has now the AM/PKL CPL order in order in all cases (not only when there is more than one CPL)
+x #B893, MXF: Crash with Panasonic P2 3.0 files
+x DPX: time information was with native ":" character
+x Images sequence: "Delay" field is filled from the number in the name of the first file
+x FLV: some files were not having the right duration
+x DPX: Cineon files were detected as DPX Version 1, version number was not corresponding to the real version
 
 Version 0.7.72, 2015-01-07
 --------------
@@ -85,154 +121,6 @@ x SMPTE ST 337: infinite loop during scanning of some non ST 337 streams
 x MP4/MOV: Using less data during detection of Dolby E hidden in a PCM track
 x Matroska: some crashs after file name of attachments update
 x MXF: MXF time code track was not displayed with some compilation options (e.g. the default Windows build)
-
-Version 0.7.70, 2014-09-03
---------------
-+ DTS Neural Audio: display of DTS Neural Audio descriptor information (matrix encoded channels count and position), sponsored by Numericable
-+ FFV1: version, bit depth, color space, chroma subsampling, versions 0 to 3, sponsored by NOA Audio Solutions
-+ HuffYUV: version, bit depth, color space, chroma subsampling, versions 1 to 3, sponsored by NOA Audio Solutions
-+ PDF: basic detection (goal is to detect PDF/A profile)
-+ HLS: support of encrypted streams (key must be in FileName.FileExt.key or provided via the library API)
-+ CDP: using CDP service descriptor for the list of 708 services + language information
-+ MXF: showing the real bit depth ("Quantization bits"); the count of bits stored in the file is in a new field "Stored bit depth" if it differs
-+ MXF: Audio "frame rate" (how PCM content is split in packets) information
-+ MXF: Audio block alignment byte size (hidden by default)
-+ VC-3: adding the commercial name "DNxHD" + bitrate class
-+ MXF: SMPTE ST 377-4 (MXF Multichannel Audio Labeling Framework)
-+ MXF: "ChannelLayoutID" new field (hidden by default) containing the MXF Channel Assignment Label
-+ Wave64: Duration
-+ CDP: frame rate
-+ IMF: improvements (still work in progress)
-+ QuickTime: ia13 CodecID
-+ CDP: using ccsvcinfo_section() for service presence and language information
-+ MXF/CDP: law rating (from CEA-608 XDS) information added (other containers were already supported)
-+ CEA-608: Program name information
-+ BMP: support of OS/2 headers
-+ HLS: com.apple.streaming.transportStreamTimestamp support
-+ ISM: ISMT / text (TTML) streams support
-+ MXF: detection of buggy BlockAlign from some muxers, so PCM bit depth is correctly detected despite the buggy metadata
-+ HEVC: library name of some encoding libraries
-+ MPEG-2 Video: picture structure for interlaced content (interlaced content can have a frame structure)
-+ HLS: support of some encrypted files (AES-128 with default IV and per segment), key is provided by the command line --File_Encryption_Key=(Base64 data)
-+ HEVC: adding support of x265 library name and x265 encoding settings
-+ ProRes: more details about ProRes in AVI or Matroska
-+ DV: support of AVd1 CodecID
-+ CMake: scripts improvements, thanks to Ivan Romanov
-+ Matroska: file name of attachments, thanks to Marshall
-x HEVC: some streams with VUI were not parsed
-x MPEG Video: was not correctly handling 1000:1001 frame rates and NDF time codes combination during frame count computing
-x MPEG Video: was not correctly detecting the time stamp of the first frame in case of closed GOP with first frame not the I-frame
-x XDCAM: information about the MXF header presence was not provided if MOV header has a glbl atom
-x Some specific C++11 code is removed for full compatibility with older C++
-x MXF: Time codes values were buggy in case of MXF with pre-charge ("Origin" not 0)
-x MPEG-4 Visual: wrong analysis in case on video_object_layer_shape not set to regular
-x MPEG-4/MOV: trying to display the summary differently when there is a difference between container and raw stream channels count information (long term method to be discussed)
-x Non-Unicode version was not building anymore
-x DyLib: trying to have a better support of pure C compilers
-
-Version 0.7.69, 2014-04-24
---------------
-+ Italian translation updated, thanks to Roberto
-+ Russian translation updated, thanks to solokot
-+ MPEG-TS: support of HEVC streams with stream_type of 36
-+ EBUCore 1.5: update with support of more fields and valid against final XSD
-+ Added interlaced content store method (Separated fields or interleaved fields)
-+ HEVC: Better support of the different containers (including MP4/MKV/FLV)
-+ #B844, Matroska: detection of covers, thanks to Max Pozdeev
-+ Sequences of files: optimization of the detection of sequences with 200k+ files
-+ Sequences of files: File_IgnoreSequenceFilesCount option for speeding up the detection of sequences (con: no detection of the latest file in the sequence)
-+ Sequences of files: File_IgnoreSequenceFileSize option for speeding up the detection of sequences (con: no detection of total size of the sequence)
-+ Sequences of files: detection when there is additional characters after the numbers (e.g. "filename[000001].png")
-+ MPEG-TS: detecting sequences of files
-+ ADTS: detecting sequences of files
-+ MediaInfoList: removing files detected as part of a sequence
-+ Arri Raw: basic detection
-+ DDS (DirectDraw Surface) support
-+ OpenMG (.oma) partial (Atrac3 only) support
-+ WebVTT detection
-x #B841, QuickTime TFF/BFF: using now Technical Note TN2162 as the reference documentation for 'fiel' atom
-x Matroska: slow parsing of some files
-x MOV/IMX: IMX was not detected when glbl atom is present
-
-Version 0.7.68, 2014-04-02
---------------
-+ Turkish translations updated thanks to Burak
-+ QuickTime: new field ScanOrder_Stored, displayed when display and Stored orders are not same (replacing ScanOrder_StoredDisplayedInverted field)
-+ IMF: better support of IMF files having more than 1 ressource per track
-+ IMF: better support of IMF files EntryPoint and SourceDuration fields
-+ MPEG-TS: EBP detection
-+ Excel VBA example (32 and 64 bit), in contrib directory
-+ Node.js examples added, in contrib directory
-+ GXF: support of DVCPRO HD
-+ GXF: Media Type is reported
-+ HEVC: added support of scaling_list_data 
-+ HEVC: deactivated general_profile_compatibility_flag validity test because some encoders do not implement it correctly
-+ MPEG-4/MOV: Speed improvement, especially for full parsing of 100+ GB files.
-+ File reading: Speed improvement of big files, especially for full parsing, with the help of a dedicated reading thread
-+ Java binding: adding support of memory buffer as input, example with InputStream class (from RandomAccessFile or from FileUrl, including Amazon S3 authorization)
-+ PTX: more files are supported
-+ Ancillary data: more fomats are detected (OP-47 WST, OP-47 Multipacket, WSS, CEA-608, MPEG-2 Recoding Information...)
-+ EBUCore output: update, with EBUCore 1.5 support
-+ MXF: detection of Sony RAW SQ (by reverse engineering, not sure)
-+ F432, AVI: detection of MPEG Video with Codec Id 0x02000010
-+ AVI: detection of captions inside MPEG Video
-+ MPEG-4/MOV: showing non-media streams (e.g. hint/rtp tracks)
-+ #P81, HEVC: raw stream frame rate info, thanks to Kurtnoise
-+ AIFF/Dolby E: detection duration of hidden Dolby E increased from 0.1 second to 1 second
-x #B833, FLV: some (out of specs) files were no more fully detected
-x #B828, HEVC/H265: parsing of final specification (vui_parameters() specs were modified)
-x #B835, HEVC/H265: bug fixes, thanks to KP Lau
-x #B838, AVC/H264: bug fixes, thanks to KP Lau
-x #B831, MPEG Audio: files with MusiFile header/trailer are correctly detected (but header/trailer are currently discarded)
-x #B836, XCode 5.1 compilation issue fixed, thanks to masterkain
-x STL: better support of non-English characters during decode
-x MXF: some properties were not displayed with OP-Atom files
-x JPEG-2000: wrong implmentation of COD parsing, with undefined behavior for some files
-x MXF: potential crash with small files
-x AAF: potential crash with small files
-x HLS: potential crash with small files
-x MXF: some video streams were wrongly detected as MPEG-2 video
-x MXF: better detection of some weird cases with interlace JPEG-2000 content
-x MXF: better support of files with more than 16 MB per frame (2.5 Gbps bit rate)
-x configure.ac: removal of problematical typos, thanks to Dmitrij D. Czarkoff
-x Files with the wrong extension: the file was sometimes fully read (very slow!)
-x AVI: Huge files (2GB+, with OpenDML) were sometimes parsed slowly
-x MOV: better display of metadata when tvsh atom is present
-x AC-3: some dependent streams ere not correctly detected
-x configure.ac: removal of problematical typos, thanks to Dmitrij D. Czarkoff
-x #B834, OpenBSD port: correction of compilation failure, thanks to Dmitrij D. Czarkoff
-
-Version 0.7.67, 2014-01-10
---------------
-x Windows version: translation files were corrupted
-x Mac App Store version: "Can not open file(s)" message when trying to open files having diacritics in file name.
-x MXF: duplicate display of some time code streams in ancillary data
-x B814, AAC: Wrong detection of audioObjectType==29
-
-Version 0.7.66, 2014-01-09
---------------
-+ EBUCore 1.4 output support
-+ IMF AssetMap (AM), PackageList (PKL) and CompositionPlaylist (CPL): improved support
-+ Channel layout information for AAC, AC-3, E-AC-3, DTS, Dolby E
-+ MXF: CodecID field (EssenceContainer-EssenceCompression)
-+ Pro Tools 10+ Session file (.ptx) support, by reverse engineering (=it may not work)
-+ Playlist files: trying to detect language and channel layout from file names
-+ QuickTime: new field ScanOrder_StoredDisplayedInverted, set to "Yes" when display and Stored orders are inverted
-+ Wave: Detection of wrong byte rate in header in order to provide right duration of some PCM streams
-+ ARIB captions: detection of captions in ancillary data (tested with MXF)
-+ AAF: basic support of playlist files
-x QuickTime: false-positive detection of incoherency between container and raw stream scan order due to inverted display and tored orders
-x MXF: Dolby E stream not detected in some cases
-x #P78, HEVC: general_level_idc shall be set equal to a value of 30 times the level number, not 10 times, thanks to Kurtnoise
-x C# binding example: was not working with 2GB+ files, was parsing sometimes the whole file
-x #B802, AAC: Infinite loop, thanks to Sébastien Michel
-x #B805, AC-3: Segfault on files falsely recognized as AC3 files, thanks to Gildas Desnos
-x #B808, PCM: Infinite loop, thanks to Gildas Desnos
-x #B809, APE tags: Infinite loop, thanks to Gildas Desnos
-x #B810, AVC: Infinite loop, thanks to Gildas Desnos
-x #B813, CLI_Compile.sh bug ("eats all resources" while compiling)
-x LATM: false-positive detection of some files
-x MXF: Crash with some files
 </pre>
             </td>
         </tr>
