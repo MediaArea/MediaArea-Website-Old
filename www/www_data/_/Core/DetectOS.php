@@ -28,8 +28,8 @@
                 else if ($Link=='MediaInfo/Download/Debian#4.amd64')       $Version='0.7.28';
                 else if ($Link=='MediaInfo/Download/Debian#5.i386')        $Version='0.7.62';
                 else if ($Link=='MediaInfo/Download/Debian#5.amd64')       $Version='0.7.62';
-                else if ($Link=='MediaInfo/Download/Debian#6.0.i386')      $Version='0.7.74';
-                else if ($Link=='MediaInfo/Download/Debian#6.0.amd64')     $Version='0.7.74';
+                else if ($Link=='MediaInfo/Download/Debian#6.0.i386')      $Version='0.7.79';
+                else if ($Link=='MediaInfo/Download/Debian#6.0.amd64')     $Version='0.7.79';
                 else if ($Link=='MediaInfo/Download/Debian#7.0.i386')      $Version='0.7.79';
                 else if ($Link=='MediaInfo/Download/Debian#7.0.amd64')     $Version='0.7.79';
                 else if ($Link=='MediaInfo/Download/Debian#8.0.i386')      $Version='0.7.79';
