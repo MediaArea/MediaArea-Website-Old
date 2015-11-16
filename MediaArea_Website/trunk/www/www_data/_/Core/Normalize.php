@@ -1,4 +1,10 @@
 <?php
+if ($Page=="/MediaConchOnline") {
+    header ("HTTP/1.1 302 Found");
+    header ("Location: /MediaConchOnline/");
+    exit;
+}
+
 //-Adding .html
 if (strlen($Page) <= 6 || ($Page{strlen($Page) - 5} != "." && $Page{strlen($Page) - 4} != "." && $Page{strlen($Page) - 3} != "."))
     $Page .= ".html";
