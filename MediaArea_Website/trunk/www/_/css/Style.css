@@ -317,49 +317,50 @@ table.menu {
     background: url("/_/img/sprite-all.png") no-repeat;
 }
 
-.Albania     { background-position: 0 0; }
-.Belarus     { background-position: -26px 0; }
-.Brazil      { background-position: -52px 0; }
-.Bulgaria    { background-position: -78px 0; }
-.Catalonia   { background-position: -104px 0; }
-.China       { background-position: -130px 0; }
-.Croatia     { background-position: -156px 0; }
-.France      { background-position: -182px 0; }
-.Georgia     { background-position: -208px 0; }
-.Germany     { background-position: -234px 0; }
-.Hungary     { background-position: -260px 0; }
-/*.Indonesia   { background-position: -286px 0; }*/
-.Iran        { background-position: -312px 0; }
-.Italy       { background-position: -338px 0; }
-.Japan       { background-position: -364px 0; }
-.Korea       { background-position: -390px 0; }
-.Lithuania   { background-position: -416px 0; }
-.Netherlands { background-position: -442px 0; }
-.Poland      { background-position: -468px 0; }
-.Portugal    { background-position: -494px 0; }
-.Russia      { background-position: -520px 0; }
-.Spain       { background-position: -546px 0; }
-.Sweden      { background-position: -572px 0; }
-.Taiwan      { background-position: -598px 0; }
-.Thailand    { background-position: -624px 0; }
-.UK          { background-position: -650px 0; }
-.Ukraine     { background-position: -676px 0; }
-.Unknown     { background-position: -702px 0; }
+.Albania     { background-position: -1px   -1px; }
+.Belarus     { background-position: -28px  -1px; }
+.Brazil      { background-position: -55px  -1px; }
+.Bulgaria    { background-position: -82px  -1px; }
+.Catalonia   { background-position: -109px -1px; }
+.China       { background-position: -136px -1px; }
+.Croatia     { background-position: -163px -1px; }
+.France      { background-position: -190px -1px; }
+.Georgia     { background-position: -217px -1px; }
+.Germany     { background-position: -244px -1px; }
+.HongKong    { background-position: -271px -1px; }
+.Hungary     { background-position: -298px -1px; }
+/*.Indonesia   { background-position: -325px -1px; }*/
+.Iran        { background-position: -352px -1px; }
+.Italy       { background-position: -379px -1px; }
+.Japan       { background-position: -406px -1px; }
+.Korea       { background-position: -433px -1px; }
+.Lithuania   { background-position: -460px -1px; }
+.Netherlands { background-position: -487px -1px; }
+.Poland      { background-position: -514px -1px; }
+.Portugal    { background-position: -541px -1px; }
+.Russia      { background-position: -568px -1px; }
+.Spain       { background-position: -595px -1px; }
+.Sweden      { background-position: -622px -1px; }
+.Taiwan      { background-position: -649px -1px; }
+.Thailand    { background-position: -676px -1px; }
+.UK          { background-position: -703px -1px; }
+.Ukraine     { background-position: -730px -1px; }
+.Unknown     { background-position: -757px -1px; }
 
 
 /* Operating Systems images */
 
-.ArchLinux  { background-position: 0 -25px; }
-.CentOS     { background-position: -17px  -25px; }
-.Debian     { background-position: -34px  -25px; }
-.Fedora     { background-position: -51px  -25px; }
-.Linux_Mint { background-position: -68px  -25px; }
-.MacOS      { background-position: -87px  -25px; }
-.Mandriva   { background-position: -104px -25px; }
-.RedHat     { background-position: -121px -25px; }
-.Ubuntu     { background-position: -138px -25px; }
-.Windows    { background-position: -155px -25px; }
-.openSUSE   { background-position: -172px -25px; }
+.ArchLinux  { background-position: -5px   -21px; }
+.CentOS     { background-position: -31px  -21px; }
+.Debian     { background-position: -57px  -21px; }
+.Fedora     { background-position: -83px  -21px; }
+.Linux_Mint { background-position: -109px -21px; }
+.MacOS      { background-position: -135px -21px; }
+.Mandriva   { background-position: -161px -21px; }
+.RedHat     { background-position: -187px -21px; }
+.Ubuntu     { background-position: -213px -21px; }
+.Windows    { background-position: -239px -21px; }
+.openSUSE   { background-position: -265px -21px; }
 
 
 @media (max-width: 1200px) {
