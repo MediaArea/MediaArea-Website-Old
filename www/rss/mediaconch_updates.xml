@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>MediaConch updates</title>
+        <link>https://mediaarea.net/MediaConch/</link>
+        <description>MediaConch updates feed</description>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 02 Mar 2016 15:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.02</title>
+            <description><![CDATA[New page for the results (analyze and update in background, delete/add jobs during the processing of the queue)<br />
+                GUI usage is saved and restored when it is restarted<br />
+                Dynamic selection of the policy and the display format in the policy viewer<br />
+                Dynamic selection of the display format in the implementation viewer<br />
+                CAVPP access and preservation policy sets<br />
+                Update of implementation checker tests, including some FFV1 checks<br />
+                Expanded REST API of the server]]></description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Mon, 29 Feb 2016 17:00:00 +0000</pubDate>
+            <guid>MediaConch-16.02</guid>
+        </item>
+        <item>
+            <title>MediaConch 16.01</title>
+            <description><![CDATA[More Matroska validation tests<br />
+                Improved reports<br />
+                Verbosity option<br />
+                MediaConch server, with a REST API<br />
+                MediaConch CLI and GUI can communicate with MediaConch server<br />
+                Support of Qt 5.6 (QtWebKit dependancy is replaced by Qt QtWebEngine dependancy)<br />
+                Matroska: CRC-32 validation<br />
+                Matroska: support of padding/junk at the start of a segment<br />
+                Matroska: trace is activated for all elements (but report is still based on the first element met)<br />
+                Matroska: add an intermediate level in the trace for the raw stream parser<br />
+                Visual Studio 2015 project files]]></description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Wed, 27 Jan 2016 17:00:00 +0000</pubDate>
+            <guid>MediaConch-16.01</guid>
+        </item>
+    </channel>
+</rss>
