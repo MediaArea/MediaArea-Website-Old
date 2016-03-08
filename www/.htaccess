@@ -370,6 +370,7 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} !/en/AVI_MetaEdit(.*)$
     RewriteCond %{REQUEST_URI} !/en/AVPS_DV_Analyzer(.*)$
     RewriteCond %{REQUEST_URI} !/en/BWF_MetaEdit(.*)$
+    RewriteCond %{REQUEST_URI} !/rss/(.*)$
     RewriteRule ^(.*)$ /index.php [L]
 </IfModule>
 

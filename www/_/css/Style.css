@@ -362,6 +362,11 @@ table.menu {
 .Windows    { background-position: -239px -21px; }
 .openSUSE   { background-position: -265px -21px; }
 
+.rss-updates {
+    background: transparent url('/_/img/Feed-icon.png') no-repeat;
+    padding: 3px 0px 1px 19px;
+    text-decoration: none;
+}
 
 @media (max-width: 1200px) {
     .TopLeftLogo {
