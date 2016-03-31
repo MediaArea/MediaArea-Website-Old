@@ -5,7 +5,17 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 02 Mar 2016 15:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 31 Mar 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.03</title>
+            <description><![CDATA[Support of plugins (VeraPDF and DPF Manager)<br />
+                Verbosity selection<br />
+                Improved free text editor<br />
+                Bugfixes]]></description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Thu, 31 Mar 2016 14:00:00 +0000</pubDate>
+            <guid>MediaConch-16.03</guid>
+        </item>
         <item>
             <title>MediaConch 16.02</title>
             <description><![CDATA[New page for the results (analyze and update in background, delete/add jobs during the processing of the queue)<br />
