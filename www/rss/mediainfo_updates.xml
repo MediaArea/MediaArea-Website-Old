@@ -5,7 +5,17 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 02 Mar 2016 15:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 31 Mar 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.84</title>
+            <description><![CDATA[x #I122, MPEG-4/MOV: Crash if mdhd timescale is 0<br />
+                x MPEG-4/MOV: Infinite loop if malformed stsc / stsz (detected by fuzzing)<br />
+                x MPEG-TS: some DVB Subtitles were not detected<br />
+                x HLS: better handling of media playlists having EXT-X-BYTERANGE]]></description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 31 Mar 2016 14:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.84</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.83</title>
             <description><![CDATA[+ HEVC: Maximum Content Light Level (MaxCLL) and Maximum Frame-Average Light Level (MaxFALL), metadata mandated by CEA-861.3 for HDR support<br />
