@@ -5,7 +5,22 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 31 Mar 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 29 Apr 2016 11:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.85</title>
+            <description><![CDATA[+ FFV1: ScanType and ScanOrder<br />
+                + Detection of Omneon VBI and move of the VBI track from Video part to Others part<br />
+                + N19/STL: Support of etection of less standard frame rates (23.976 and 29.970)<br />
+                + Teletext in MPEG-TS: Teletext not subtitle moved to "Other" part<br />
+                + Teletext in MPEG-TS: display of CodecID and timestamp of first frame<br />
+                x Teletext in MXF: some IDs were wrong (when there are more than one Teletext service)<br />
+                x MPEG-4/MOV: default of raw audio to Signed in case of stsd atom version &lt;2<br />
+                x MPEG Video: some CEA-608/708 captions were not correctly detected due to some packets discarded by the parser with interlaced content<br />
+                x MPEG-4/MOV: Dolby E with 2 or more audio services were not correctly reported]]></description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Fri, 29 Apr 2016 11:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.85</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.84</title>
             <description><![CDATA[x #I122, MPEG-4/MOV: Crash if mdhd timescale is 0<br />

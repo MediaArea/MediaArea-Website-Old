@@ -175,6 +175,10 @@ table.menu {
 .menu4:hover { background-color: #A3CF73; }
 .menu5:hover { background-color: #C2AFBD; }
 
+.content {
+    vertical-align: top;
+}
+
 .contents table {
     width: 100%;
 }

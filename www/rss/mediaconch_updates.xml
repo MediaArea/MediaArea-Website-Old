@@ -5,7 +5,21 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 31 Mar 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 29 Apr 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.04</title>
+            <description><![CDATA[Merge of "Checker" and "Results" pages in one page as in MediaConchOnline<br />
+                Checker page new design, based on MediaConchOnline one<br />
+                Add some settings (default policy, default display, default path for file open)<br />
+                Remember the last policy used, the last display used, the last path used<br />
+                FFV1: display of the trace of the slice header<br />
+                Check a directory recursively<br />
+                Fix: display correctly information even if the file disappeared (renamed / not accessible)<br />
+                Minor UI fixes]]></description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Fri, 29 Apr 2016 14:00:00 +0000</pubDate>
+            <guid>MediaConch-16.04</guid>
+        </item>
         <item>
             <title>MediaConch 16.03</title>
             <description><![CDATA[Support of plugins (VeraPDF and DPF Manager)<br />
