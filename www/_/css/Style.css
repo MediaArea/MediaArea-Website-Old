@@ -221,6 +221,10 @@ table.menu {
     background-color: #B8B8B8;
 }
 
+.download th, .download td {
+    padding: 2px;
+}
+
 .download-main,
 .download-main:hover {
     text-decoration: none;
