@@ -16,7 +16,6 @@
  <li><a href="#General">General</a>
   <ul>
    <li><a href="#URL">What is the canonical URL of the website?</a></li>
-   <li><a href="#OpenCandy">The installer tries to connect to the Internet!!</a></li>
    <li><a href="#Internet">MediaInfo tries to connect to the Internet!</a></li>
    <li><a href="#MultipleNames">In the SourceForge repository, there are multiple filenames. Which one should I download?</a></li>
    <li><a href="#MultipleVersions">In the SourceForge repository, there are multiple file versions. Which one should I download?</a></li>
@@ -32,7 +31,6 @@
   <ul>
    <li><a href="#Licence_GUI">What is the license?</a></li>
    <li><a href="#BuildFromSources_GUI">How do I compile from source?</a></li>
-   <li><a href="#GUI_Linux">Why isn't there a GUI version of MediaInfo for Linux?</a></li>
   </ul>
  </li>
  <li><a href="#Cmd">MediaInfo Command Line Interface (CLI)</a>
@@ -68,6 +66,7 @@ Scan&nbsp;order,&nbsp;stored/displayed&nbsp;inverted&nbsp;&nbsp;&nbsp;&nbsp;:&nb
 </code>
 Meaning that displayed order is BFF but raw stream stored order is TFF. Some player do not obey the inversion metadata from the QuickTime container so you can sometimes see TFF.
 Update: <a href="https://sourceforge.net/p/mediainfo/bugs/841/">There is a discussion about a technical report</a> and the output may change in the future</div>
+</div>
 
 <h2><a name="General"></a>General</h2>
 <div class="paragraph-block">
@@ -76,26 +75,10 @@ Update: <a href="https://sourceforge.net/p/mediainfo/bugs/841/">There is a discu
 http://mediaarea.net/MediaInfo<br/>
 </div>
 
-<h3><a name="OpenCandy"></a>The installer tries to connect to the Internet!</h3>
-<div class="paragraph-block">
-<a href="http://www.opencandy.com/what/">OpenCandy</a> is used by the Windows GUI installer for recommending other software you may find valuable during the installation .<br/>
-You can look at the <a href="http://www.opencandy.com/privacy-policy/">OpenCandy privacy policy</a>.<br/>
-If you don't have an OpenCandy screen during the install, or if you don't click on "Yes, Install" (this is NOT the default action) in this screen, nothing is done.<br/>
-If even with these explanations you don't want OpenCandy stuff, you can:
-<ul>
- <li>Pay me every month for not having it (I spend a lot of time on MediaInfo, and I try to live from this work)</li>
- <li>Use the <a href="/Download/Windows">package without the installer</a></li>
- <li>Use your own installer (this is open source, you can do it)</li>
- <li>Donate! Donors (whatever the donation) don't have the OpenCandy screen</li>
-</ul>
-Keep in mind that nothing is installed without your consent.<br/>
-More information is available at the <a href="/Bundled">Powered by OpenCandy</a> page.<br/>
-</div>
-
 <h3><a name="Internet"></a>MediaInfo tries to connect to the Internet!</h3>
 <div class="paragraph-block">
 Yes, it tries (if "Check for newest version" is checked).<br/>
-When this checkbox is checked, MediaInfo connects to mediaarea.eu website too for <strong>anonymous</strong> statistics. (how often MediaInfo is used, which OS/Language/Country is the most used...)<br/>
+When this checkbox is checked, MediaInfo connects to mediaarea.net website too for <strong>anonymous</strong> statistics. (how often MediaInfo is used, which OS/Language/Country is the most used...)<br/>
 If you don't want to autorize anonymous statistics, uncheck the "Check for newest version" checkbox.
 </div>
 
@@ -200,13 +183,7 @@ MediaInfoGUI is governed by a <a href="../License">BSD-style license</a>.
 <div class="paragraph-block">
 The source code can be downloaded <a href="/Download/Source">here</a>.<br/>
 You need Borland C++ 6 to compile it.<br/>
-There is a <a href="/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
-</div>
-
-<h3><a name="GUI_Linux"></a>Why isn't there a GUI version of MediaInfo for Linux?</h3>
-<div class="paragraph-block">
-VCL (the graphical library of Borland) is not portable (this is the only one), so I can't adapt the GUI for Linux.<br/>
-If you know how to program with wxWidgets (a standard graphical library), and are interested in adapting MediaInfo to wxWidgets, then I am interested. Please <a href="mailto:info@mediaarea.net">contact me</a>!<br/>
+There is a <a href="/MediaInfo/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
 </div>
 </div>
 
@@ -226,7 +203,7 @@ You can add a <a href="https://sourceforge.net/p/mediainfo/feature-requests/">fe
 <h3><a name="BuildFromSources_Cmd"></a>How do I compile from source?</h3>
 <div class="paragraph-block">
 The source code can be downloaded <a href="/Download/Source">here</a>.<br/>
-Note : there are a lot of dependencies, so you may have difficulty compiling them. There is a <a href="/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
+There is a <a href="/MediaInfo/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
 </div>
 </div>
 
@@ -249,7 +226,7 @@ Maybe the software doesn't support the latest version of the DLL.<br/>
 <h3><a name="SDK"></a>How do I import data from your DLL?</h3>
 <div class="paragraph-block">
 Download the DLL package. There are some examples, in many different languages (standard C, standard C++, GCC, MinGW, Borland C++ Builder, Microsoft Visual C++, Microsoft Visual Basic, Microsoft C#, Microsoft J#)<br/>
-There is also an <a href="/Support/SDK">SDK</a>.
+There is also an <a href="/MediaInfo/Support/SDK">SDK</a>.
 </div>
 
 <h3><a name="StaticLib"></a>I'd rather have static libraries</h3>
@@ -260,13 +237,13 @@ On the download page, there is package with:
  <li>Library compiled with Borland C++ builder 6</li>
  <li>Library compiled with Microsoft Visual C++ 9 (aka 2005). Warning : the project is statically linked to the multithreaded C++ library, and options are C++ compliant (Be careful. In standard C++, wchar_t is a type, not a short int).</li>
 </ul>
-If you want to use other compilers or options, you must <a href="/Support/Build_From_Sources">compile from source</a>.
+If you want to use other compilers or options, you must <a href="/MediaInfo/Support/Build_From_Sources">compile from source</a>.
 </div>
 
 <h3><a name="BuildFromSources_DLL"></a>How do I compile from source?</h3>
 <div class="paragraph-block">
 The source code can be downloaded <a href="/Download/Source">here</a>.<br/>
-Note : there are a lot of dependencies, so you may have difficulty compiling them. There is a <a href="/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
+There is a <a href="/MediaInfo/Support/Build_From_Sources/ThirdParty">help file to assist in compiling dependencies</a>.
 </div>
 </div>
 
