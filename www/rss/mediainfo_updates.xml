@@ -5,7 +5,25 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 29 Apr 2016 11:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 31 May 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.86</title>
+            <description>
+                <![CDATA[+ Linux/Mac: more output formats (PBCore, EBUCore, FIMS)<br />
+                + FFV1 parsing optimization, avoiding by default a too verbose trace<br />
+                + Matroska: more elements support and typo fixes in the trace<br />
+                + #I172, Trace feature: provide the name of the main parser in the media element<br />
+                + Matroska: consider all values below 0x10 EBML names as 1-byte junk<br />
+                x Matroska: better support (including speed improvement) of huge lossless frames (e.g. 20 MB FFV1 4K)<br />
+                x #I144, Python binding: Python 2 on Linux does not automatically provide the locale to the shared object<br />
+                x HTML output: don't escape carriage returns from the input file<br />
+                x FFV1: some streams were rejected despite the fact they are valid<br />
+                x Python binding: some errors during call of Get() API with Python3 on Linux/Mac]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Tue, 31 May 2016 14:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.86</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.85</title>
             <description><![CDATA[+ FFV1: ScanType and ScanOrder<br />
