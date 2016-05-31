@@ -5,7 +5,25 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 29 Apr 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 31 May 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.05</title>
+            <description>
+                <![CDATA[MediaConch XML format v0.2<br />
+                Improved Matroska tests<br />
+                Improved HTML display<br />
+                FFV1 parsing speed improvement<br />
+                Updated settings display<br />
+                Remember last policy and display directories<br />
+                List of values for several elements in the policy editor<br />
+                Option for applying a policy to all open files<br />
+                Code refactoring of the user interface<br />
+                Minor UI fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Tue, 31 May 2016 14:00:00 +0000</pubDate>
+            <guid>MediaConch-16.05</guid>
+        </item>
         <item>
             <title>MediaConch 16.04</title>
             <description><![CDATA[Merge of "Checker" and "Results" pages in one page as in MediaConchOnline<br />
