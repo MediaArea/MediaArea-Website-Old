@@ -5,7 +5,21 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 31 May 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jun 2016 12:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.06</title>
+            <description>
+                <![CDATA[Create a policy from MediaInfo report<br />
+                Revisited HTML report, more compact and with a summary per test<br />
+                Revisited Display window<br />
+                Minor UI fixes on the main window<br />
+                Matroska files with CodecPrivate element before CodecID element where not always correctly parsed<br />
+                Performance improvements]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Thu, 30 Jun 2016 12:00:00 +0000</pubDate>
+            <guid>MediaConch-16.06</guid>
+        </item>
         <item>
             <title>MediaConch 16.05</title>
             <description>

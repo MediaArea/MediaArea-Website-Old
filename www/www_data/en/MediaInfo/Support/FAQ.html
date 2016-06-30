@@ -249,7 +249,7 @@ There is a <a href="/MediaInfo/Support/Build_From_Sources/ThirdParty">help file 
 
 <h3><a name="AccessIsDenied"></a>I have the message "Access is denied" on the production server</h3>
 <div class="paragraph-block">
-One some production servers, users have this message:
+On some production servers, users have this message:
 <pre>Unable to load DLL 'MediaInfo.dll': Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))</pre>
 For certain strict server setups, the Local Service account that is executing the DLL is only allowed read permission. However, for personal development machine, it is sometimes less strict and given full access and works fine for the developer.<br/>
 You need to set "Read &amp; execute" rights for MediaInfo.dll when deploying.<br/>
