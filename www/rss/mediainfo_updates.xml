@@ -5,7 +5,23 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 31 May 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jun 2016 12:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.87</title>
+            <description>
+                <![CDATA[+ Spanish and catalan languages updated, thanks to Sergi Medina<br />
+                + Refactoring of the trace feature, for better performance and some bug fixes<br />
+                - Visual C++ 2012 project files removed<br />
+                x Review of symbols display, now using standard display (e.g. "k" instead of "K", " min" instead of "mn"...)<br />
+                x XML output: revert to old versioning method (version is MediaInfo software version)<br />
+                x I63, EBUCore/FIMS outputs: typo correction about WritingLibrary and WritingApplication<br />
+                x Matroska: files with CodecPrivate element before CodecID element where not always correctly parsed<br />
+                x OGG: crash/incoherent behavior with some buggy OGG streams having invalid chunk sizes]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 30 Jun 2016 12:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.87</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.86</title>
             <description>
