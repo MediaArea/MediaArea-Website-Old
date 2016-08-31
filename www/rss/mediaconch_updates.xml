@@ -5,7 +5,30 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 30 Jun 2016 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 31 Aug 2016 07:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.08</title>
+            <description>
+                <![CDATA[Policy Editor : close message when user change of policy/rule<br />
+                Checker : remove a node is not saved<br />
+                Checker : fix handling of files with special chars<br />
+                Add ctrl-q shortcut to quit<br />
+                Better handling of user path]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Wed, 31 Aug 2016 07:00:00 +0000</pubDate>
+            <guid>MediaConch-16.08</guid>
+        </item>
+        <item>
+            <title>MediaConch 16.07</title>
+            <description>
+                <![CDATA[New policy editor<br />
+                Minor fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Fri, 29 Jul 2016 10:00:00 +0000</pubDate>
+            <guid>MediaConch-16.07</guid>
+        </item>
         <item>
             <title>MediaConch 16.06</title>
             <description>
