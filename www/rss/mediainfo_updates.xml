@@ -5,7 +5,18 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 30 Jun 2016 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 31 Aug 2016 07:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.88</title>
+            <description>
+                <![CDATA[+ MediaInfo distributed with HTTP/HTTPS support: support of Amazon S3 with Signature Version 4<br />
+                + FFV1: parsing speed slight improvement<br />
+                x Duration: fixed regression in last release, sometimes duration was displayed with only count of minutes]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Wed, 31 Aug 2016 07:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.88</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.87</title>
             <description>
