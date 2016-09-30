@@ -5,7 +5,22 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 31 Aug 2016 07:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 30 Sep 2016 08:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.09</title>
+            <description>
+                <![CDATA[New policy format to allow complex policies<br />
+                Update example policies and displays<br />
+                New policy editor to build complex policies<br />
+                Policy rules can use MediaTrace<br />
+                Handling of FFV1 16-bit bitdepth (YUV and RGB)<br />
+                Support of Matroska FieldOrder, MatrixCoefficients, BitsPerChannel, Range, TransferCharacteristics, Primaries new elements<br />
+                Stream count policy test (in General section)]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Fri, 30 Sep 2016 08:00:00 +0000</pubDate>
+            <guid>MediaConch-16.09</guid>
+        </item>
         <item>
             <title>MediaConch 16.08</title>
             <description>

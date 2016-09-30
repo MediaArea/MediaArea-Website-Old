@@ -5,7 +5,31 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 31 Aug 2016 07:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 30 Sep 2016 08:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.89</title>
+            <description>
+                <![CDATA[x Tree view for Windows: present the results at the top of the tree<br />
+                + QuickTime: support of Panasonic AVC-Intra 50/100/200 without SPS/PPS ("aixx" and "AVin" CodecID)<br />
+                + More QuickTime/MP4/AVC/HEVC color descriptions based on future ISO 23001-8:201x/PDAM1<br />
+                + FFV1: handling 16+ bitdepth (YUV and RGB) while handling buggy version &lt;= 3 YUV 16-bit streams<br />
+                + Improved growing file detection, option for forcing the growing file test<br />
+                + Matroska: support of video FieldOrder, MatrixCoefficients, BitsPerChannel, Range, TransferCharacteristics, Primaries<br />
+                + Acquisition Metadata: support of more elements (IrisTNumber, IrisRingPosition, FocusRingPosition, ZoomRingPosition, ColorMatrix)<br />
+                + Add stream counts to MIXML output<br />
+                + I242, AVI/Matroska: mapping of mjp2 to JPEG 2000 format name<br />
+                + MPEG-4 Visual: parsing of Studio profiles, providing width/height/frame rate...<br />
+                + MXF: reading MPEG-4 Visual profile from MXF sub-descriptor and/or EssenceCompression<br />
+                + MXF: reading Intra GOP info from descriptors<br />
+                + Sequence of images: detection of sequence even if the provided path separator is the Unix one (Windows only)<br />
+                x Acquisition Metadata: IrisFNumber, FocusPosition, LensZoom were not correctly reported<br />
+                x LXF: fixed crash in case of some malformed files<br />
+                x LXF: reject bad frames instead of displaying wrong duration and bit rate]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Fri, 30 Sep 2016 08:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.89</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.88</title>
             <description>
