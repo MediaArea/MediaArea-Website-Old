@@ -5,7 +5,22 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 30 Sep 2016 08:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 31 Oct 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaConch 16.10</title>
+            <description>
+                <![CDATA[Update implementation tests, policies and displays<br />
+                Public policies page<br />
+                Handle latest versions of VeraPDF and DPF Manager<br />
+                FFmpeg plugin<br />
+                Watch folder plugin<br />
+                Fixer (see https://mediaarea.net/MediaConch/fixity.html )<br />
+                Several minor fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Mon, 31 Oct 2016 14:00:00 +0000</pubDate>
+            <guid>MediaConch-16.10</guid>
+        </item>
         <item>
             <title>MediaConch 16.09</title>
             <description>

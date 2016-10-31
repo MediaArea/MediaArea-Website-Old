@@ -5,7 +5,28 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 30 Sep 2016 08:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 31 Oct 2016 14:00:00 +0000</lastBuildDate>
+        <item>
+            <title>MediaInfo 0.7.90</title>
+            <description>
+                <![CDATA[+ #M94, WAV: support of file with a buggy RIFF header<br />
+                + Matroska: detection of segment size of zero (compatibility risks e.g. Windows 10 Media Player does not play such file)<br />
+                + MXF: detection of some incoherences between header and footer<br />
+                + MXF: display of Locked information<br />
+                + N19/STL: support of 48/50/60 fps content<br />
+                + N19/STL: display of time code of first frame<br />
+                + AC-3: bit depth<br />
+                + MPEG Video: CBR bitrate mode information based on vbv_delay<br />
+                + DXW: support of fake time code attribute<br />
+                x Teletext in MPEG-TS: CodecID, format (classic teletext or subtitle), video delay were sometimes not displayed<br />
+                x PDF: fixed crash with some files with full analysis set<br />
+                x #B485, BMP height is negative<br />
+                x Several minor fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Mon, 31 Oct 2016 14:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.90</guid>
+        </item>
         <item>
             <title>MediaInfo 0.7.89</title>
             <description>
