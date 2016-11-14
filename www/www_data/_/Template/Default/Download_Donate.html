@@ -7,7 +7,7 @@ if (isset($Donated)) {
     //Replace the target of the download
     if (isset($_COOKIE["WantedDownload"])) {
         $Link=$_COOKIE["WantedDownload"];
-        $Link=str_replace("http://downloads.sourceforge.net/mediainfo/", "http://download.mediaarea.net/binary/mediainfo-gui/".$Version."/", $Link);
+        $Link=str_replace("https://downloads.sourceforge.net/mediainfo/", "http://download.mediaarea.net/binary/mediainfo-gui/".$Version."/", $Link);
     } else
         $Link="https://mediaarea.net/Download";
 
