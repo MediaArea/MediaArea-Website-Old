@@ -356,6 +356,7 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} !/robots.txt
     RewriteCond %{REQUEST_URI} !/sitemap.xml
     RewriteCond %{REQUEST_URI} !/index.php
+    RewriteCond %{REQUEST_URI} !/index.html
     RewriteCond %{REQUEST_URI} !/lb.php
     RewriteCond %{REQUEST_URI} !/Conch/(.*)$
     RewriteCond %{REQUEST_URI} !/MediaArea/(.*)$
@@ -364,6 +365,15 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} !/MediaConch/(.*)$
     RewriteCond %{REQUEST_URI} !/MediaTrace/(.*)$
     RewriteCond %{REQUEST_URI} !/mediatrace/(.*)$
+    RewriteCond %{REQUEST_URI} !/QCTools(.*)$
+    RewriteCond %{REQUEST_URI} !/qctools(.*)$
+    RewriteCond %{REQUEST_URI} !/AVIMetaEdit(.*)$
+    RewriteCond %{REQUEST_URI} !/avimetaedit(.*)$
+    RewriteCond %{REQUEST_URI} !/BWF_MetaEdit(.*)$
+    RewriteCond %{REQUEST_URI} !/BWFMetaEdit(.*)$
+    RewriteCond %{REQUEST_URI} !/bwfmetaedit(.*)$
+    RewriteCond %{REQUEST_URI} !/DVAnalyzer(.*)$
+    RewriteCond %{REQUEST_URI} !/dvanalyzer(.*)$
     RewriteCond %{REQUEST_URI} !/FIMS/(.*)$
     RewriteCond %{REQUEST_URI} !/xsd/(.*)$
     RewriteCond %{REQUEST_URI} !/Events(.*)$
@@ -372,6 +382,24 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} !/en/BWF_MetaEdit(.*)$
     RewriteCond %{REQUEST_URI} !/rss/(.*)$
     RewriteRule ^(.*)$ /index.php [L]
+    RewriteCond %{REQUEST_URI} ^/QCTools(.*)$
+    RewriteRule ^(.*)$ /www_data_QCTools/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/qctools(.*)$
+    RewriteRule ^(.*)$ /www_data_QCTools/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/AVIMetaEdit(.*)$
+    RewriteRule ^(.*)$ /www_data_AVIMetaEdit/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/avimetaedit(.*)$
+    RewriteRule ^(.*)$ /www_data_AVIMetaEdit/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/BWFMetaEdit(.*)$
+    RewriteRule ^(.*)$ /www_data_BWFMetaEdit/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/BWF_MetaEdit(.*)$
+    RewriteRule ^(.*)$ /www_data_BWFMetaEdit/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/bwfmetaedit(.*)$
+    RewriteRule ^(.*)$ /www_data_BWFMetaEdit/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/DVAnalyzer(.*)$
+    RewriteRule ^(.*)$ /www_data_DVAnalyzer/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/dvanalyzer(.*)$
+    RewriteRule ^(.*)$ /www_data_DVAnalyzer/index.php [L]
 </IfModule>
 
 # ----------------------------------------------------------------------
