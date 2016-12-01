@@ -5,8 +5,24 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 31 Oct 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 01 Dec 2016 16:00:00 +0000</lastBuildDate>
         <item>
+            <title>MediaInfo 0.7.91</title>
+            <description>
+                <![CDATA[+ Add TIFF extension to Windows shell extension<br />
+                    x Debian 9 and Ubuntu 16.10+: Remove unneeded dependency<br />
+                    + IMF and PTX: more languages detected from file names (but the full list of common languages tags still need to be added)<br />
+                    + IMF and PTX: support of non-standard but common "LAS" = "Spanish (Latin America)" language code<br />
+                    + MXF: Support of color primaries, transfer characteristic, coding equations defined in SMPTE ST 2067-21:2016 e.g. xvYCC or BT.2020<br />
+                    + Minor performance optimizations and cleanup (Thanks to Pavel Pimenov)<br />
+                    + MediaTrace optimization for Matroska<br />
+                    x Fixed parsing of FFV1 v0/v1<br />
+                    x PTX: fix crash due to bad parsing of some file names while looking for track language]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 01 Dec 2016 16:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.91</guid>
+        </item>
             <title>MediaInfo 0.7.90</title>
             <description>
                 <![CDATA[+ #M94, WAV: support of file with a buggy RIFF header<br />

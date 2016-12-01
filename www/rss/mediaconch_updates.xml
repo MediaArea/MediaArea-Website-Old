@@ -5,8 +5,21 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 31 Oct 2016 14:00:00 +0000</lastBuildDate>
-        <item>
+        <lastBuildDate>Thu, 01 Dec 2016 16:00:00 +0000</lastBuildDate>
+         <item>
+            <title>MediaConch 16.11</title>
+            <description>
+                <![CDATA[Publish a policy to MediaConchOnline public policies<br />
+                MediaTrace optimization for Matroska<br />
+                Fixed parsing of FFV1 v0/v1<br />
+                Minor UI fixes<br />
+                Improve support of plugins]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Thu, 01 Dec 2016 16:00:00 +0000</pubDate>
+            <guid>MediaConch-16.11</guid>
+        </item>
+       <item>
             <title>MediaConch 16.10</title>
             <description>
                 <![CDATA[Update implementation tests, policies and displays<br />
