@@ -376,6 +376,35 @@ table.menu {
     text-decoration: none;
 }
 
+/* Search Box */
+.searchbox {
+    font-size: 13px;
+}
+
+.searchbox-input {
+    border: 1px solid #CECECE;
+    margin: 10px 0 10px 15px;
+    padding: 1px 6px;
+    width: 180px;
+}
+
+.searchbox-submit {
+    font-weight: bold;
+    padding: 0 7px;
+    margin: 0;
+    background-color: #CECECE;
+    border: 1px solid #666;
+}
+
+.searchbox-reset {
+    color: #CECECE;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+
 @media (max-width: 1200px) {
     .TopLeftLogo {
         display: none;
