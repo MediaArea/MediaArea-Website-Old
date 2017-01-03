@@ -23,7 +23,8 @@
             <pubDate>Thu, 01 Dec 2016 16:00:00 +0000</pubDate>
             <guid>MediaInfo-0.7.91</guid>
         </item>
-            <title>MediaInfo 0.7.90</title>
+        <item>
+           <title>MediaInfo 0.7.90</title>
             <description>
                 <![CDATA[+ #M94, WAV: support of file with a buggy RIFF header<br />
                 + Matroska: detection of segment size of zero (compatibility risks e.g. Windows 10 Media Player does not play such file)<br />

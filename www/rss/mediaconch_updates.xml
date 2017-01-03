@@ -5,8 +5,22 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 01 Dec 2016 16:00:00 +0000</lastBuildDate>
-         <item>
+        <lastBuildDate>Tue, 03 Jan 2016 14:00:00 +0000</lastBuildDate>
+          <item>
+            <title>MediaConch 16.12</title>
+            <description>
+                <![CDATA[Push policies to MediaConchOnline (public or private)<br />
+                Import policies from MediaConchOnline<br />
+                UI improvements<br />
+                Better handling of errors<br />
+                Fix adding 100+ files for analyze<br />
+                Fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Tue, 03 Jan 2016 14:00:00 +0000</pubDate>
+            <guid>MediaConch-16.12</guid>
+        </item>
+        <item>
             <title>MediaConch 16.11</title>
             <description>
                 <![CDATA[Publish a policy to MediaConchOnline public policies<br />
