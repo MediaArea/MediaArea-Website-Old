@@ -5,7 +5,26 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 03 Jan 2016 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 31 Jan 2017 16:00:00 +0000</lastBuildDate>
+          <item>
+            <title>MediaConch 17.01</title>
+            <description>
+                <![CDATA[Less verbose output by default (use " -ft" for old behavior)<br />
+                    New display templates "Simple" and "CSV"<br />
+                    Support of newest version of DPFManager (TIFF plugin) and VeraPDF (PDF plugin)<br />
+                    Store implementation report in database (no need to run it again at relaunch)<br />
+                    Policy editor: option for creating policy from a file<br />
+                    Policy editor: split between Profile and Level<br />
+                    Checker page: jump to the page containing the file to analyze<br />
+                    Checker page: scroll to the top of the results when page is changed<br />
+                    Checker page: add reload analyze button (force analyze)<br />
+                    Checker page: reduce font size of jstree MediaInfo and MediaTrace<br />
+                    Several small bug fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Tue, 31 Jan 2017 16:00:00 +0000</pubDate>
+            <guid>MediaConch-17.01</guid>
+          </item>
           <item>
             <title>MediaConch 16.12</title>
             <description>
