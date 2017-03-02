@@ -5,7 +5,29 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 31 Jan 2017 16:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 01 Mar 2017 16:00:00 +0000</lastBuildDate>
+         <item>
+            <title>MediaInfo 0.7.93</title>
+            <description>
+                <![CDATA[+ Matroska: detection of native FFV1 CodecID ("V_FFV1")<br />
+                    + AC-3/E-AC-3: detection of Atmos inside core streams<br />
+                    + AC-3/E-AC-3: slight reorganization of metadata display for dual mono and surround<br />
+                    + AC-3/E-AC-3: "complete main" and similar info moved to "Service kind" dedicated line<br />
+                    + AC-3/E-AC-3: more precision about how is built a stream (e.g. "E-AC-3+Atmos / E-AC-3" or "TrueHD+Atmos / TrueHD / AC-3")<br />
+                    + WTV: basic detection<br />
+                    + MPEG-TS: Detection of Opus<br />
+                    + URL: "URLEncode" option for saying if the input should be URL encoded or not (default is guess = no change except if it contains spaces)<br />
+                    x MediaTrace: for bitstreams (not bytestreams), bit offset was wrong<br />
+                    x HLS: duration was sometimes wrong, reading only the first TS file duration. Now full duration is displayed<br />
+                    x MPEG-TS: if stream is encrypted or invalid, level was sometimes not the expected one for AVC (e.g. "BaseLine@3.0" instead of "Baseline@3")<br />
+                    x Matroska: FFV1 stream width/height was not initialized when Matroska track header width/height is after CodecID<br />
+                    x FFV1: fix potential crash with some buggy slice headers<br />
+                    x Matroska: crash in case of big attachment and CRC32 present]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Wed, 01 Mar 2017 16:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.93</guid>
+        </item>
          <item>
             <title>MediaInfo 0.7.92</title>
             <description>
