@@ -5,7 +5,20 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 01 Mar 2017 16:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 30 Mar 2017 13:00:00 +0000</lastBuildDate>
+          <item>
+            <title>MediaConch 17.03</title>
+            <description>
+                <![CDATA[Analyze attachments in Matroska files<br />
+                    Reduce size of Matroska trace<br />
+                    Few small FFV1 parsing improvements<br />
+                    Checker: js refactoring, improve display of results, performance improvements<br />
+                    Several small bug fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Thu, 30 Mar 2017 13:00:00 +0000</pubDate>
+            <guid>MediaConch-17.03</guid>
+          </item>
           <item>
             <title>MediaConch 17.02</title>
             <description>

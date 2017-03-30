@@ -5,7 +5,23 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 01 Mar 2017 16:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 30 Mar 2017 13:00:00 +0000</lastBuildDate>
+         <item>
+            <title>MediaInfo 0.7.94</title>
+            <description>
+                <![CDATA[+ VC-3: detection of embedded time code<br />
+                    + VC-3: better support of stream with width 960 or 1440<br />
+                    + VC-3: support of version 3 (a.k.a. DNxHR), including profile and level for version 1/2 (a.k.a. DNxHD)<br />
+                    + Matroska trace feature: reduction of its size<br />
+                    + MXF trace feature: reduction of its size<br />
+                    + Visual Studio 2017 project files<br />
+                    x M143, MXF with Acquisition Metadata: crash fixed<br />
+                    x Several crash fixes]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 30 Mar 2017 13:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.94</guid>
+        </item>
          <item>
             <title>MediaInfo 0.7.93</title>
             <description>
