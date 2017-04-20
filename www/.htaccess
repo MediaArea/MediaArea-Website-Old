@@ -381,6 +381,7 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} !/en/AVPS_DV_Analyzer(.*)$
     RewriteCond %{REQUEST_URI} !/en/BWF_MetaEdit(.*)$
     RewriteCond %{REQUEST_URI} !/rss/(.*)$
+    RewriteCond %{REQUEST_URI} !/google87686dbd4c057639.html$
     RewriteRule ^(.*)$ /index.php [L]
     RewriteCond %{REQUEST_URI} ^/QCTools(.*)$
     RewriteRule ^(.*)$ /www_data_QCTools/index.php [L]
