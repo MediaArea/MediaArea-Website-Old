@@ -5,7 +5,32 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 30 Mar 2017 13:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 04 May 2017 14:00:00 +0000</lastBuildDate>
+         <item>
+            <title>MediaInfo 0.7.95</title>
+            <description>
+                <![CDATA[+ EBUCore: EBUCore 1.8 with acquisition metadata output.<br />
+                    + Better support of growing files, especially when accessed by FTP<br />
+                    + Matroska: better support of some broken files (high EBMLMaxSizeLength, padding before start of EBML)<br />
+                    + EXR: showing Multipart and Deep flags<br />
+                    + EXR: show image compression method<br />
+                    x EBUCore: fixed display aspect ratio (was using rational)<br />
+                    x EBUCore: fixed frame rate factor (was num/den instead of factor)<br />
+                    x AVC: some streams with dynamic frame type were having a wrong frame rate<br />
+                    x MPEG-4: some old AAC tracks were not correctly detected<br />
+                    x Matroska: was sometimes displaying "Bit depth: Bit0" when bit depth is unknown<br />
+                    x Nut: fix crash with some files<br />
+                    x FFV1: PixelAspectRatio was an integer, switched to 3-digit rational<br />
+                    x DTS: fix frame count<br />
+                    x Dolby E: fix frame count<br />
+                    x EBUCore: fix regression creating invalid XML files<br />
+                    x AVC: some streams with dynamic frame type were having a wrong frame rate<br />
+                    x I490, EXR: was not supporting valid 31-char attribute names]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 04 May 2017 14:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.95</guid>
+        </item>
          <item>
             <title>MediaInfo 0.7.94</title>
             <description>
