@@ -516,6 +516,10 @@
         {
             $Link='//mediaarea.net/download/donors/'.$Version.'/MediaInfo_GUI_'.$Version.'_Windows.exe';
         }
+        else if (isset($NewVersionRequested))
+        {
+            $Link='//mediaarea.net/download/current/MediaInfo_GUI_'.$Version.'_Windows.exe';
+        }
         else
         {
             $Link='//mediaarea.net/download/binary/mediainfo-gui/'.$Version.'/MediaInfo_GUI_'.$Version.'_Windows.exe';
