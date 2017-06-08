@@ -5,7 +5,22 @@
         <link>https://mediaarea.net/MediaConch/</link>
         <description>MediaConch updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 04 May 2017 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jun 2017 14:00:00 +0000</lastBuildDate>
+          <item>
+            <title>MediaConch 17.05</title>
+            <description>
+                <![CDATA[Add MediaConch to Mac App Store<br />
+                    Use OS native dialogs instead of those from Qt<br />
+                    Display login status in settings page and allow to logout<br />
+                    Fixed broken XML output display<br />
+                    add FFV1-VALID-VERSION, EBML-ELEMENT-VALID-RANGE, NO-JUNK-IN-FIXEDSIZE-MATROSKA, EBML-ELEM-UNKNOWN-SIZE tests<br />
+                    deprecate MKV-VALID-BOOLEANS test<br />
+                    fixes to MKV-NUMERICAL-TAG test]]>
+            </description>
+            <link>https://mediaarea.net/MediaConch/download.html</link>
+            <pubDate>Thu, 01 Jun 2017 14:00:00 +0000</pubDate>
+            <guid>MediaConch-17.05</guid>
+          </item>
           <item>
             <title>MediaConch 17.04</title>
             <description>

@@ -5,7 +5,23 @@
         <link>https://mediaarea.net/MediaInfo</link>
         <description>MediaInfo updates feed</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 04 May 2017 14:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jun 2017 14:00:00 +0000</lastBuildDate>
+         <item>
+            <title>MediaInfo 0.7.96</title>
+            <description>
+                <![CDATA[+ MPEG-4: display of recorded date from DV substream<br />
+                    x I505, AC-3: crash with some potentially malformed frames<br />
+                    x I477, AVC: fix hang when open .mpls from some 3D BD<br />
+                    x MPEG-4: does not show "1904" year is raw value is 0 (Mac/Linux)<br />
+                    x Dedicated read thread disabled by default (rare dead locks)<br />
+                    x #B1027, MPEG-TS: some files where detected as MPEG-TS or BDAV but they aren't<br />
+                    x Sequence of files : frame count was wrong with sequence of MPEG-TS files (was count of files)<br />
+                    x MXF: detection of more 608/708 with parsing of few frames in the middle of the file was broken]]>
+            </description>
+            <link>https://mediaarea.net/MediaInfo</link>
+            <pubDate>Thu, 01 Jun 2017 14:00:00 +0000</pubDate>
+            <guid>MediaInfo-0.7.96</guid>
+        </item>
          <item>
             <title>MediaInfo 0.7.95</title>
             <description>
